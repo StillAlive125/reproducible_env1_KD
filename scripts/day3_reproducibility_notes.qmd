@@ -8,30 +8,41 @@ toc: true
 
 ## R Environment Setup
 
-I am trying to learn somthing
-
 ```{r}
-#| eval: false
+library(tidyverse)
 ```
-
-## Conda Environment Setup
 
 ## Step 1: Searching for FastQC
 
-This will activate the conda FastQC
-
 ```{bash}
 #| eval: false
+conda search -c bioconda fastqc
 ```
 
-This is second bash chunk
+## **Step 2: Create a new Environment**
 
 ```{bash}
 #| eval: false
+conda create --name genomics -y  # -y means "yes" to all questions automatically
 ```
 
-Now creating third bash chunk
+## **Step 3: Activating the Environment**
 
 ```{bash}
 #| eval: false
+conda activate genomics
+```
+
+## **Step 4: Installation**
+
+```{bash}
+#| eval: false
+conda install -c bioconda fastqc -y
+```
+
+## **Step 5: Verification (The Help Flag)**
+
+```{bash}
+#| eval: false
+fastqc -h
 ```
