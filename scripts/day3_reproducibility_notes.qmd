@@ -9,6 +9,7 @@ toc: true
 ## R Environment Setup
 
 ```{r}
+#| eval: false
 library(tidyverse)
 ```
 
