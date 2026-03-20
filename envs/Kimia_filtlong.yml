@@ -1,0 +1,6 @@
+name: Kimia_filtlong
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+prefix: /Users/kmansoori00/miniconda3/envs/Kimia_filtlong
